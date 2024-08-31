@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>HTML Basics</title>
+    <style>
+      .nav-link:hover {
+        background-color: #08b3f7;
+        color: #fff;
+      }
+      h1::first-letter {
+        font-size: 3em;
+        font-weight: bold;
+      }
+      .nav-link::before {
+        content: "\25B6";    /* Unicode character for a right-pointing triangle */
+        margin-right: 25px;
+      }
+      .nav-link::after {
+        content: " »";       /* Right-pointing double angle quotation mark */
+        margin-left: 25px;
+       
+      }
+    </style>
+  </head>
+
+  <body>
+  
+    <h1>Welcome to HTML Basics</h1>
+
+    
+    <!-- Navigation links -->
+    <p><a href="#division" class="nav-link">Jump to Division section</a></p>
+    
+    <!-- ... (rest of the content) ... -->
+    
+    <!-- Division tag -->
+    <a id="division"></a>
+    <div style="background-color: #f0f0f0; padding: 20px;">
+      <p>This is a division.</p>
+    </div>
+  </body>
+</html>

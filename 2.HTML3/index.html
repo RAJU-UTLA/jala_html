@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Input Restrictions</title>
+</head>
+<body>
+  <h1>Input Restrictions</h1>
+  <form>
+    <!-- Text input with restrictions -->
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" 
+           required minlength="4" maxlength="10" size="20" value="defaultUsername"><br><br>
+
+    <!-- Number input with restrictions -->
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" 
+           min="18" max="100" value="25" readonly><br><br>
+
+    <!-- Disabled input -->
+    <label for="disabledInput">Disabled Input:</label>
+    <input type="text" id="disabledInput" name="disabledInput" disabled><br><br>
+
+    <!-- Required input -->
+    <label for="requiredInput">Required Input:</label>
+    <input type="text" id="requiredInput" name="requiredInput" required><br><br>
+
+    <!-- Readonly input -->
+    <label for="readonlyInput">Readonly Input:</label>
+    <input type="text" id="readonlyInput" name="readonlyInput" readonly value="This input is readonly"><br><br>
+  
+<!-- Submit button -->
+<input type="submit" value="Submit" name="submit">
+
+</form>
+</body>
+</html>
